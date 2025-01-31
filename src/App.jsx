@@ -9,14 +9,14 @@ function App() {
         'https://tse2.mm.bing.net/th?id=OIP.IIIPIPZYMBOJgxFfWGRtBAHaHa&rs=1&pid=ImgDetMain',
       name: 'The Great Adventure',
       genre: 'Fiction',
-      author: 'Jane Doe',
+      author: 'Jane ',
     },
     {
       id: 2,
       image: 'https://i.thenile.io/r1000/9781496687197.jpg?r=6085750d133cf',
       name: 'Mysteries of the Universe',
       genre: 'Science',
-      author: 'John Smith',
+      author: 'John ',
     },
     {
       id: 3,
@@ -35,19 +35,20 @@ function App() {
     },
   ];
 
-  return (
-    <div className="app">
-      {books.map((book) => (
+  return(
+    <div className='app'>
+      {books.map((book)=>(
         <BookCard
-          key={book.id}
-          image={book.image}
-          name={book.name}
-          genre={book.genre}
-          author={book.author}
+        key = {book.id}
+        image = {book.image}
+        name = {book.name}
+        genre = {book.genre}
+        author = {book.author}
         />
       ))}
     </div>
-  );
+  )
+
 }
 
 export default App;
